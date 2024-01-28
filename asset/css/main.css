@@ -1,0 +1,390 @@
+.wrap {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.swiper {
+    width: 690px;
+}
+
+.section01 {
+    display: flex;
+    gap: 22px;
+}
+
+
+
+.slide-area {
+    display: flex;
+}
+
+.slide-area .slide-tit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.slide-area .slide-tit li {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 175px;
+    justify-content: center;
+    background: #d2e1e9;
+}
+
+.slide-area .slide-tit li.on {
+    background-color: #0158a8;
+    color: #fff;
+}
+
+.slide-area .slide-tit li .slide_name {
+    font-weight: 600;
+    color: #333;
+}
+
+.slide-area .slide-tit li.on .slide_name {
+    color: #fff;
+}
+
+.slide-area .slide-tit li.on:after {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    left: 100%;
+    top: 50%;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #0158a8;
+    transform: translateY(-50%);
+}
+
+.slide-area .slide-tit li a {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.slide-img-wrap .slide-img-item {
+    position: relative;
+}
+
+.slide-img-wrap .slide-img-item .slide-txt {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 5px;
+}
+
+
+.icon_news {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-radius: 50%;
+}
+
+.section01 .mayor-wrap {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 360px;
+}
+
+.section01 .mayor-wrap .mayor-news {
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.section01 .mayor-wrap .news-txt {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+    text-align: center;
+}
+
+.section01 .mayor-wrap .mayor-banner {
+    position: relative;
+}
+
+.section01 .mayor-wrap .mayor-banner .mayor-link {
+    display: flex;
+    position: relative;
+    background: url(../images/img-mayor-intro.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 64px;
+}
+
+.section01 .mayor-wrap .mayor-banner .link-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.section01 .mayor-wrap .mayor-banner .link-list li {
+    text-align: center;
+    width: calc((100% - 4px) / 4);
+}
+
+.section01 .mayor-wrap .mayor-banner .link-list li a {
+    background: #8b7153;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.section01 .mayor-wrap .mayor-banner .mayor-hope {
+    position: absolute;
+    top: 18px;
+    right: 14px;
+}
+
+.section01 .banner-area {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.section01 .banner-area .seoul-sns a {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section01 .banner-area .seoul-sns {
+    background: #eed925;
+
+}
+
+.section02 {
+    padding-top: 50px;
+}
+
+.section02 h2 {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.section02 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section02 ul li {}
+
+.section02 ul li a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.section02 ul li a [class*="ico"] {
+    width: 60px;
+    height: 60px;
+}
+
+.section02 ul li a .list-name {
+    font-size: 15px;
+}
+
+.section02 ul li.public .ico {
+    background-position: -360px 0;
+}
+
+.section02 ul li.answer .ico {
+    background-position: 0 0;
+}
+
+.section02 ul li.job .ico {
+    background-position: -120px 0;
+}
+
+.section02 ul li.realestate .ico {
+    background-position: -300px 0;
+}
+
+.section02 ul li.portal .ico {
+    background-position: -180px 0;
+}
+
+.section02 ul li.welfare .ico {
+    background-position: -960px 0;
+}
+
+.section02 ul li.house .ico {
+    background-position: -780px 0;
+}
+
+.section02 ul li.young .ico {
+    background-position: -1140px 0;
+}
+
+.section02 ul li.mediahub .ico {
+    background-position: -1020px 0;
+}
+
+.section02 ul li.democracy .ico {
+    background-position: -60px 0;
+}
+
+.section02 ul li.ebook .ico {
+    background-position: -1080px 0;
+}
+
+.section02 ul li.council .ico {
+    background-position: -600px 0;
+}
+
+.section03 {
+    background: #eff4f8;
+    padding: 20px 0;
+    margin-top: 35px;
+}
+
+.section04 {
+    display: flex;
+    gap: 36px;
+    padding: 50px 0 50px;
+    border-bottom: 2px solid #222222;
+}
+
+.section04 section {
+    flex: 1;
+    min-width: 0;
+}
+
+.section04 .board h2 {
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.section04 .board ul {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.section04 .board ul li {
+    display: flex;
+    gap: 9px;
+
+}
+
+.section04 .board ul li .cate {
+    font-size: 15px;
+}
+
+.section04 .board ul li .cate.cul {
+    color: #9b64d3
+}
+
+.section04 .board ul li .cate.work {
+    color: #028ab6
+}
+
+.section04 .board ul li .cate.env {
+    color: #599100
+}
+
+.section04 .board ul li .cate.eco {
+    color: #069363
+}
+
+.section04 .board ul a {
+    font-size: 15px;
+    color: #222222;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.section05 {
+    margin-top: 40px;
+}
+
+.section05 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section05 ul li {}
+
+.section05 ul li a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.section05 ul li a [class*="ico"] {
+    width: 85px;
+    height: 85px;
+}
+
+.section05 ul li.house a {
+    background: url(../images/icon_house.png) no-repeat;
+}
+
+.section05 ul li.economy a {
+    background: url(../images/icon_economy.png) no-repeat;
+}
+
+.section05 ul li.traffic a {
+    background: url(../images/icon_traffic.png) no-repeat;
+}
+
+.section05 ul li.environment a {
+    background: url(../images/icon_environment.png) no-repeat;
+}
+
+.section05 ul li.welfare a {
+    background: url(../images/icon_welfare.png) no-repeat;
+}
+
+.section05 ul li.safty a {
+    background: url(../images/icon_safty.png) no-repeat;
+}
+
+.section05 ul li.culture a {
+    background: url(../images/icon_culture.png) no-repeat;
+}
+
+.section05 ul li.work a {
+    background: url(../images/icon_work.png) no-repeat;
+}
+
+.section05 ul li a .list-name {
+    font-size: 15px;
+}

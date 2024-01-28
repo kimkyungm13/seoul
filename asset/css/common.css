@@ -1,0 +1,23 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+header .logo a {
+    background: url(../images/img-sp-common.png);
+    background-repeat: no-repeat;
+}
+
+.section02 ul li a [class*="ico"] {
+    background: url(../images/icon_service.png);
+    background-repeat: no-repeat;
+}
+
+.icon_news {
+    background: url(../images/icon_main.png);
+    background-repeat: no-repeat;
+}
