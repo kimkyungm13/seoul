@@ -1,0 +1,91 @@
+@import url(./reset.css);
+@import url(./common.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+    width: 1152px;
+    margin: 7px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header .header-top {
+    display: flex;
+    width: 100%;
+    gap: 70px;
+}
+
+header .logo {
+    margin-top: 7px;
+}
+
+header .logo a {
+    width: 105px;
+    height: 27px;
+    display: block;
+    background-position: -5px -165px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+header .gnb {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .gnb a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+header .user {
+    display: flex;
+    gap: 20px;
+}
+
+header .user a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header .header-bottom {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+header .header-bottom .slogan {
+    width: 133px;
+    height: 51px;
+    background: url(../images/img-slogan.png) no-repeat;
+}
+
+header .header-bottom .search-group {
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+}
+
+header {}
+
+header {}
+
+header .header-bottom {
+    width: 100%;
+}

@@ -1,0 +1,263 @@
+.main_wrap {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 24px;
+}
+
+.top-group {
+    display: flex;
+    gap: 22px;
+}
+
+
+
+.slide-area {
+    display: flex;
+}
+
+.slide-area .slide-tit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.slide-area .slide-tit li {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 175px;
+    justify-content: center;
+    background: #d2e1e9;
+}
+
+.slide-area .slide-tit li.on {
+    background-color: #0158a8;
+    color: #fff;
+}
+
+.slide-area .slide-tit li .slide_name {
+    font-weight: 600;
+    color: #333;
+}
+
+.slide-area .slide-tit li.on .slide_name {
+    color: #fff;
+}
+
+.slide-area .slide-tit li.on:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 100%;
+    top: 50%;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #0158a8;
+    transform: translateY(-50%);
+}
+
+.slide-area .slide-tit li a {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slide-img-wrap {}
+
+.slide-img-wrap .slide-img-item {
+    position: relative;
+}
+
+.slide-img-wrap .slide-img-item .slide-txt {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 5px;
+}
+
+.slide-img-wrap {}
+
+.icon_news {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-radius: 50%;
+}
+
+.top-group .mayor-wrap {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 360px;
+}
+
+.top-group .mayor-wrap .mayor-news {
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.top-group .mayor-wrap .news-txt {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+    text-align: center;
+}
+
+.top-group .mayor-wrap .mayor-banner {
+    position: relative;
+}
+
+.top-group .mayor-wrap .mayor-banner .mayor-link {
+    display: flex;
+    position: relative;
+    background: url(../images/img-mayor-intro.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 64px;
+}
+
+.top-group .mayor-wrap .mayor-banner .link-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.top-group .mayor-wrap .mayor-banner .link-list li {
+    text-align: center;
+    width: calc((100% - 4px) / 4);
+}
+
+.top-group .mayor-wrap .mayor-banner .link-list li a {
+    background: #8b7153;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.top-group .mayor-wrap .mayor-banner .mayor-hope {
+    position: absolute;
+    top: 18px;
+    right: 14px;
+}
+
+.top-group .banner-area {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.top-group .banner-area .seoul-sns a {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-group .banner-area .seoul-sns {
+    background: #eed925;
+
+}
+
+.service-group {}
+
+.service-group {}
+
+.service-group ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-group ul li {}
+
+.service-group ul li a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.service-group ul li a [class*="ico"] {
+    width: 60px;
+    height: 60px;
+}
+
+.service-group ul li a .list-name {
+    font-size: 15px;
+}
+
+.service-group ul li.public .ico {
+    background-position: -360px 0;
+}
+
+.service-group ul li.answer .ico {
+    background-position: 0 0;
+}
+
+.service-group ul li.job .ico {
+    background-position: -120px 0;
+}
+
+.service-group ul li.realestate .ico {
+    background-position: -300px 0;
+}
+
+.service-group ul li.portal .ico {
+    background-position: -180px 0;
+}
+
+.service-group ul li.welfare .ico {
+    background-position: -960px 0;
+}
+
+.service-group ul li.house .ico {
+    background-position: -780px 0;
+}
+
+.service-group ul li.young .ico {
+    background-position: -1140px 0;
+}
+
+.service-group ul li.mediahub .ico {
+    background-position: -1020px 0;
+}
+
+.service-group ul li.democracy .ico {
+    background-position: -60px 0;
+}
+
+.service-group ul li.ebook .ico {
+    background-position: -1080px 0;
+}
+
+.service-group ul li.council .ico {
+    background-position: -600px 0;
+}
