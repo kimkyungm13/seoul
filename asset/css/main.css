@@ -281,8 +281,14 @@ h2 {
 }
 
 .section04 section {
+    position: relative;
     flex: 1;
     min-width: 0;
+}
+
+.section04 .title_group {
+    display: flex;
+    align-items: center;
 }
 
 .section04 .board h2 {
@@ -328,6 +334,44 @@ h2 {
     text-overflow: ellipsis;
     white-space: nowrap;
     flex: 1;
+}
+
+.section04 .board a.more {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 22px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background: url(/asset/images/img-sp-common.png) no-repeat -1px -1px;
+}
+
+.section04 .fav_service h2 {
+    margin-bottom: 0;
+}
+
+.section04 .fav_service ul {
+    display: grid;
+    padding: 17px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px;
+    background: #eff4f8;
+}
+
+.section04 .fav_service ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.section04 .fav_service ul li:before {
+    content: '';
+    position: absolute;
+    background: #666666;
+    width: 2px;
+    height: 2px;
+    left: 0;
 }
 
 .section05 {
@@ -387,4 +431,9 @@ h2 {
 
 .section05 ul li a .list-name {
     font-size: 15px;
+}
+
+.section06 {
+    position: relative;
+    padding: 20px 0 30px;
 }

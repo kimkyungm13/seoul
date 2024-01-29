@@ -86,6 +86,7 @@
                         </div>
                     </div>
                     <div class="slide-control">
+                        <div class="swiper-pagination"></div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
@@ -148,12 +149,16 @@
         </section>
         <div class="section03">
             <div class="wrap">
-                sgdg
+                <a href="" class="story-link">
+                    <h2 class="blind">스토리 in 서울</h2>
+                </a>
+
             </div>
         </div>
         <div class="wrap section04">
             <section class="board event">
                 <h2>이벤트 신청</h2>
+                <a href="" class="more"><span class="blind">이벤트 신청 더보기</span></a>
                 <ul>
                     <li>
                         <span class="cate cul">문화</span><a href="">서울시 대학생 주목! 제6기 핫둘기자단 모집</a>
@@ -174,6 +179,8 @@
             </section>
             <section class="board festival">
                 <h2>이달의 행사 및 축제</h2>
+                <a href="" class="more"><span class="blind">이달의 행사 및 축제 더보기</span></a>
+
                 <ul>
                     <li>
                         <span class="cate eco">경제</span><a href="">인공지능 기술이 만들 공공혁신의 미래 - AI SEOUL 202</a>
@@ -194,7 +201,38 @@
             </section>
             <section class="fav_service">
                 <h2>자주 찾은 서비스</h2>
-
+                <ul>
+                    <li>
+                        <a href="">법무행정(자치법규)</a>
+                    </li>
+                    <li>
+                        <a href="">서울안전누리</a>
+                    </li>
+                    <li>
+                        <a href="">지방세납부</a>
+                    </li>
+                    <li>
+                        <a href="">전자책(e-book)</a>
+                    </li>
+                    <li>
+                        <a href="">공공서비스예약</a>
+                    </li>
+                    <li>
+                        <a href="">서울일자리포털</a>
+                    </li>
+                    <li>
+                        <a href="">평생학습포털</a>
+                    </li>
+                    <li>
+                        <a href="">내손안에서울</a>
+                    </li>
+                    <li>
+                        <a href="">조직도</a>
+                    </li>
+                    <li>
+                        <a href="">에코마일리지</a>
+                    </li>
+                </ul>
             </section>
         </div>
         <section class="wrap section05">
@@ -217,11 +255,15 @@
             </ul>
         </section>
         <section class="wrap section06">
-
+            <h2>새소식</h2>
         </section>
     </main>
     <script>
         const swiper = new Swiper('.mySwiper', {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
