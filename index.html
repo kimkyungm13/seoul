@@ -35,6 +35,28 @@
             </nav>
         </div>
         <div class="header-bottom">
+            <div class="lang_site">
+                <label for="cityLang" class="blind">언어 선택</label>
+                <select id="cityLang" name="cityLang">
+                    <option value="http://english.seoul.go.kr/?SSid=101_01"
+                        onclick="action_logging({tr_code:'foreign'});">ENGLISH
+                    </option>
+                    <option value="http://japanese.seoul.go.kr/?SSid=101_02"
+                        onclick="action_logging({tr_code:'foreign'});">日本語
+                    </option>
+                    <option value="http://chinese.seoul.go.kr/?SSid=101_04"
+                        onclick="action_logging({tr_code:'foreign'});">简体中文
+                    </option>
+                    <option value="http://tchinese.seoul.go.kr/?SSid=101_03"
+                        onclick="action_logging({tr_code:'foreign'});">繁体中文
+                    </option>
+                    <option value="http://world.seoul.go.kr/" onclick="action_logging({tr_code:'foreign'});">WorldWide
+                    </option>
+                    <!-- <option value="http://french.seoul.go.kr"           onclick="action_logging({tr_code:'foreign'});" >français</option>
+                      <option value="http://spanish.seoul.go.kr"           onclick="action_logging({tr_code:'foreign'});" >español</option> -->
+                </select>
+                <input id="inp_cityLang" type="button" value="GO" title="서울시 다국어 홈페이지로 이동-새창" class="select_btn">
+            </div>
             <span class="slogan"><span class="blind">동행.매력 특별시서울</span></span>
             <div class="search-group">
                 <form method="get">
@@ -67,27 +89,26 @@
                         <div class="swiper-slide slide-img-wrap">
                             <a class="slide-img-item" href="">
                                 <img src="./asset/images/img-slide01.jpg" alt="">
-                                <div class="slide_sub_tit">
-                                    <p class="slide-txt">기후동행카드 23일 판매 시작! 27일 사용 시작!</p>
-                                    <button class="btn-prev blind">이전</button>
-                                    <button class="btn-prev blind">다음</button>
-                                </div>
+
+                                <p class="slide-txt">기후동행카드 23일 판매 시작! 27일 사용 시작!</p>
+
                             </a>
                         </div>
                         <div class="swiper-slide slide-img-wrap">
                             <a class="slide-img-item" href="">
                                 <img src="./asset/images/img-slide02.jpg" alt="">
-                                <div class="slide_sub_tit">
-                                    <p class="slide-txt">망설이면 순삭! '동행서울 친환경농장' 선착순 모집</p>
-                                    <button class="btn-prev blind">이전</button>
-                                    <button class="btn-prev blind">다음</button>
-                                </div>
+
+                                <p class="slide-txt">망설이면 순삭! '동행서울 친환경농장' 선착순 모집</p>
+
+
                             </a>
                         </div>
                     </div>
                     <div class="slide-control">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-pause state-swiper-pause" role="button" tabindex="0" title="일시정지"><i
+                                class="icon-control-pause"></i></div>
                         <div class="swiper-button-next"></div>
                     </div>
                 </div>
@@ -123,7 +144,8 @@
             </div>
         </div>
         <section class="wrap section02">
-            <h2>주요서비스</h2>
+            <h2>주요 서비스</h2>
+            <a href="" class="btn-link">전체누리집</a>
             <ul>
                 <li class="public"><a href=""><span class="ico"></span><span class="list-name">공공서비스예약</span></a>
                 </li>
@@ -148,9 +170,26 @@
             </ul>
         </section>
         <div class="section03">
-            <div class="wrap">
+            <div class="wrap banner-group">
                 <a href="" class="story-link">
-                    <h2 class="blind">스토리 in 서울</h2>
+                    <span class="blind">스토리 in 서울</span>
+                    <img src="./asset/images/img-story01.jpg" alt="">
+                </a>
+                <a href="" class="story-link">
+                    <span class="blind">스토리 in 서울</span>
+                    <img src="./asset/images/img-story02.jpg" alt="">
+                </a>
+                <a href="" class="story-link">
+                    <span class="blind">스토리 in 서울</span>
+                    <img src="./asset/images/img-story03.jpg" alt="">
+                </a>
+                <a href="" class="story-link">
+                    <span class="blind">스토리 in 서울</span>
+                    <img src="./asset/images/img-story04.jpg" alt="">
+                </a>
+                <a href="" class="story-link">
+                    <span class="blind">스토리 in 서울</span>
+                    <img src="./asset/images/img-story05.jpg" alt="">
                 </a>
 
             </div>
@@ -256,9 +295,121 @@
         </section>
         <section class="wrap section06">
             <h2>새소식</h2>
+            <div class="new-area">
+                <div class="new-wrap work">
+                    <span class="tit">행정</span>
+                    <a href="">
+                        <img src="./asset/images/img-work.jpg" alt="">
+                        <p>자동차세 절감 혜택 가장 큰 ‘1월’에 연세액 납부하세요!</p>
+                    </a>
+                </div>
+                <div class="new-wrap work">
+                    <span class="tit">행정</span>
+                    <a href="">
+                        <img src="./asset/images/img-work2.jpg" alt="">
+                        <p>야간, 휴일에도 진료하는 병원을 찾고 있다면? 우리아이 안심 의료기관을 이용해 보세요</p>
+                    </a>
+                </div>
+                <div class="new-wrap work">
+                    <span class="tit">행정</span>
+                    <a href="">
+                        <img src="./asset/images/img-work3.jpg" alt="">
+                        <p>31일까지 경유차 환경개선부담금 연납하고 10% 할인 받으세요</p>
+                    </a>
+                </div>
+                <div class="new-wrap work">
+                    <span class="tit">행정</span>
+                    <a href="">
+                        <img src="./asset/images/img-work4.jpg" alt="">
+                        <p>청소년이 만든 `서체 4종` 무료 배포… 자유롭게 사용하세요!</p>
+                    </a>
+                </div>
+                <div class="new-wrap work">
+                    <span class="tit">행정</span>
+                    <a href="">
+                        <img src="./asset/images/img-work5.jpg" alt="">
+                        <p>아기와 편한 외출 돕는 `서울엄마아빠택시` 25개 전 자치구 확대</p>
+                    </a>
+                </div>
+                <div class="new-wrap work">
+                    <span class="tit">행정</span>
+                    <a href="">
+                        <img src="./asset/images/img-work6.jpg" alt="">
+                        <p>`원산지 둔갑 잡아낸다` 서울시, 설 앞두고 민생침해 불법행위 집중단속</p>
+                    </a>
+                </div>
+                <div class="new-wrap work">
+                    <span class="tit">행정</span>
+                    <a href="">
+                        <img src="./asset/images/img-work7.jpg" alt="">
+                        <p>새해 태어나는 쌍둥이 `안심보험` 무료 지원…최대 3천만 원 보장</p>
+                    </a>
+                </div>
+                <div class="new-wrap work">
+                    <a href="">
+                        <img src="./asset/images/img-work8.jpg" alt="">
+
+                    </a>
+                </div>
+            </div>
         </section>
+        <div class="wrap section07">
+            <div class="now-group">
+                <section class="now-seoul-mv">
+                    <h2>서울영상</h2>
+                </section>
+                <section class="now-seoul-mv">
+                    <h2>서울소식</h2>
+                </section>
+                <section class="now-seoul-mv">
+                    <h2>서울시 SNS</h2>
+                </section>
+            </div>
+        </div>
+        <div class="wrap section08">
+            <span class="blind">팝업존</span>
+            <div class="swiper popSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img src="./asset/images/img-pop01.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="./asset/images/img-pop02.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="./asset/images/img-pop03.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="./asset/images/img-pop04.jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="control-group">
+                    <div class="pagination"></div>
+                    <div class="btn-wrap">
+                        <button class="button-prev"></button>
+                        <button class="button-pause state-swiper-pause" role="button" tabindex="0" title="일시정지"><i
+                                class="icon-control-pause"></i></button>
+                        <button class="button-next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script>
+        var popSwiper = new Swiper(".popSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".pagination",
+                type: "fraction",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
         const swiper = new Swiper('.mySwiper', {
             pagination: {
                 el: ".swiper-pagination",
