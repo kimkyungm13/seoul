@@ -7,7 +7,9 @@
     margin: -1px;
 }
 
-header .logo a {
+header .logo a,
+.section04 .board a.more,
+.section08 .popSwiper .control-group .btn-wrap [class*="button-"] {
     background: url(../images/img-sp-common.png);
     background-repeat: no-repeat;
 }

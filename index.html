@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./asset/js/common.js"></script>
 </head>
 
 <body>
-
     <header class="header">
         <div class="header-top">
             <h1 class="logo"><a href=""><span class="blind">서울특별시</span></a></h1>
@@ -89,27 +89,28 @@
                         <div class="swiper-slide slide-img-wrap">
                             <a class="slide-img-item" href="">
                                 <img src="./asset/images/img-slide01.jpg" alt="">
-
                                 <p class="slide-txt">기후동행카드 23일 판매 시작! 27일 사용 시작!</p>
-
                             </a>
                         </div>
                         <div class="swiper-slide slide-img-wrap">
                             <a class="slide-img-item" href="">
                                 <img src="./asset/images/img-slide02.jpg" alt="">
-
                                 <p class="slide-txt">망설이면 순삭! '동행서울 친환경농장' 선착순 모집</p>
-
-
                             </a>
                         </div>
                     </div>
                     <div class="slide-control">
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-pause state-swiper-pause" role="button" tabindex="0" title="일시정지"><i
-                                class="icon-control-pause"></i></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="paging"></div>
+                        <div class="control-wrap">
+                            <div class="button-"><button class="btn-prev"><span class="blind">이전</span></button>
+                            </div>
+                            <div class="button-">
+                                <button class="btn-pause"><span class="blind">멈춤</span></button>
+                                <button class="btn-play"><span class="blind">재생</span></button>
+                            </div>
+                            <div class="button-"><button class="btn-next"><span class="blind">다음</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -388,38 +389,99 @@
                     <div class="pagination"></div>
                     <div class="btn-wrap">
                         <button class="button-prev"></button>
-                        <button class="button-pause state-swiper-pause" role="button" tabindex="0" title="일시정지"><i
-                                class="icon-control-pause"></i></button>
+                        <button class="button-pause"></button>
+                        <button class="button-play"></button>
                         <button class="button-next"></button>
                     </div>
                 </div>
             </div>
         </div>
+        <section class="wrap section09">
+            <ul class="site-group">
+                <li class="list-01">
+                    <button class="btn-01">직속기관.사업소</button>
+                    <div class="site_wrap">
+                        <ul class="site_list">
+                            <li><a href="http://www.uos.ac.kr/" target="_blank">서울시립대학교</a></li>
+                            <li><a href="https://sihe.seoul.go.kr" target="_blank">보건환경연구원</a></li>
+                            <li><a href="http://hrd.seoul.go.kr" target="_blank">인재개발원</a></li>
+                            <li><a href="http://agro.seoul.go.kr/" target="_blank">농업기술센터</a></li>
+                            <li><a href="http://119.seoul.go.kr" target="_blank">서울종합방재센터</a></li>
+                            <li><a href="http://fire.seoul.go.kr/air/main/main.do" target="_blank">119특수구조단</a></li>
+                            <li><a href="http://fire.seoul.go.kr/" target="_blank">소방서</a></li>
+                            <li><a href="http://fire.seoul.go.kr/school/main/main.do" target="_blank">소방학교</a>
+                            </li>
+                            <li><a href="http://arisu.seoul.go.kr" target="_blank">서울아리수본부</a></li>
+                            <li><a href="http://hangang.seoul.go.kr" target="_blank">미래한강본부</a></li>
+                            <li><a href="https://news.seoul.go.kr/env/water-recycling-facility/jungnang-water-center/jungnang-water-center-introduction"
+                                    target="_blank">물재생센터</a></li>
+                            <li><a href="http://sbhosp.seoul.go.kr/" target="_blank">서북병원</a></li>
+                            <li><a href="http://childhosp.seoul.go.kr/" target="_blank">어린이병원</a></li>
+                            <li><a href="http://ephosp.seoul.go.kr" target="_blank">은평병원</a></li>
+                            <li><a href="http://www.museum.seoul.kr/" target="_blank">서울역사박물관</a></li>
+                            <li><a href="http://baekjemuseum.seoul.go.kr/" target="_blank">한성백제박물관</a></li>
+                            <li><a href="https://craftmuseum.seoul.go.kr/" target="_blank">서울공예박물관</a></li>
+                            <li><a href="https://sema.seoul.go.kr/" target="_blank">시립미술관</a></li>
+                            <li><a href="http://stadium.seoul.go.kr/" target="_blank">체육시설관리사업소</a></li>
+                            <li><a href="http://lib.seoul.go.kr/" target="_blank">서울도서관</a></li>
+                            <li><a href="http://history.seoul.go.kr/" target="_blank">서울역사편찬원</a></li>
+                            <li><a href="http://news.seoul.go.kr/citybuild/archives/209601" target="_blank">품질시험소</a>
+                            </li>
+                            <li><a href="http://grandpark.seoul.go.kr" target="_blank">서울대공원</a></li>
+                            <li><a href="http://parks.seoul.go.kr/information/list.do" target="_blank">동부공원녹지사업소</a>
+                            </li>
+                            <li><a href="http://parks.seoul.go.kr/information/list.do" target="_blank">중부공원녹지사업소</a>
+                            </li>
+                            <li><a href="http://parks.seoul.go.kr/information/list.do" target="_blank">서부공원녹지사업소</a>
+                            </li>
+                            <li><a href="http://parks.seoul.go.kr/information/list.do" target="_blank">북부공원녹지사업소</a>
+                            </li>
+                            <li><a href="https://science.seoul.go.kr" target="_blank">서울시립과학관</a></li>
+                            <li><a href="http://botanicpark.seoul.go.kr/" target="_blank">서울식물원</a></li>
+                            <li><a href="https://archives.seoul.go.kr/" target="_blank">서울기록원</a></li>
+                            <li><a href="http://child.seoul.go.kr/" target="_blank">아동복지센터</a></li>
+                            <li><a href="http://yeonsu.eseoul.go.kr" target="_blank">공무원수련원</a></li>
+                            <li><a href="http://safe119.seoul.go.kr/" target="_blank">시민안전체험관</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="">공사.출연기관</button>
+                    <div class="site_wrap">
+                        <ul class="site_list">
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="">자치구</button>
+                    <div class="site_wrap">
+                        <ul class="site_list">
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="">중앙행정기관</button>
+                    <div class="site_wrap">
+                        <ul class="site_list">
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="">지방자치단체.유관기관</button>
+                    <div class="site_wrap">
+                        <ul class="site_list">
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
     <script>
-        var popSwiper = new Swiper(".popSwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".pagination",
-                type: "fraction",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".button-next",
-                prevEl: ".button-prev",
-            },
-        });
-        const swiper = new Swiper('.mySwiper', {
-            pagination: {
-                el: ".swiper-pagination",
-                type: "fraction",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+
     </script>
 </body>
 

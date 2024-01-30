@@ -110,7 +110,6 @@ h2 {
 
 .section01 .slide-control {
     position: absolute;
-    background: red;
     right: 0;
     bottom: 0;
     width: 110px;
@@ -118,6 +117,45 @@ h2 {
     height: 40px;
     align-items: center;
     z-index: 99;
+}
+
+.section01 .slide-control .control-wrap {
+    display: flex;
+}
+
+.section01 .slide-control .control-wrap [class*="button-"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section01 .slide-control .control-wrap [class*="btn-"] {
+    width: 18px;
+    height: 18px;
+    background: url(/asset/images/img-sp-common2019.png) no-repeat;
+
+}
+
+.section01 .slide-control .control-wrap .btn-prev {
+    background-position: -241px -285px;
+}
+
+.section01 .slide-control .control-wrap .btn-pause {
+    background-position: -283px -285px
+}
+
+.section01 .slide-control .control-wrap .btn-play {
+    display: none;
+    background-position: -269px -285px
+}
+
+.section01 .slide-control .control-wrap .btn-next {
+    background-position: -256px -285px;
+}
+
+.section01 .slide-control .paging,
+.section01 .slide-control .paging span {
+    color: #fff;
 }
 
 .section01 .mayor-wrap {
@@ -395,7 +433,7 @@ h2 {
     width: 22px;
     height: 20px;
     border: 1px solid #ddd;
-    background: url(/asset/images/img-sp-common.png) no-repeat -1px -1px;
+    background-position: -1px -1px;
 }
 
 .section04 .fav_service h2 {
@@ -576,7 +614,6 @@ h2 {
     width: 20px;
     height: 20px;
     border: 1px solid #999;
-    background: url(/asset/images/img-sp-common.png) no-repeat;
 }
 
 .section08 .popSwiper .control-group .btn-wrap .button-prev {
@@ -593,8 +630,81 @@ h2 {
     background-position: -65px -43px;
 }
 
-.section08 .popSwiper .swiper-slide img {
-    width: 100%;
+.section08 .popSwiper .control-group .btn-wrap .button-play {
+    display: none;
+    background-position: -101px -43px;
 }
 
-.section08 {}
+.section09 {
+    position: relative;
+}
+
+.section09 ul {
+    display: flex;
+}
+
+.section09 .site-group li {
+    flex: 1;
+}
+
+.section09 .site-group li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background: #f7f7f7;
+    padding: 16px 0;
+}
+
+.section09 .site_wrap {
+    display: none;
+    position: absolute;
+    bottom: 51px;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 3;
+    background: #fff;
+    padding: 15px;
+}
+
+.section09 .site_wrap.on {
+    display: block;
+}
+
+.section09 .site_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    width: 100%;
+    background: #fff;
+}
+
+.site-group [class*="btn-"] {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.site-group [class*="btn-"].on {
+    background: #e2e2e2;
+}
+
+.site-group [class*="btn-"]:after {
+    content: '';
+    position: absolute;
+    right: 45px;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #373737;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(-135deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center center;
+}
+
+.site-group [class*="btn-"].on:after {
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
