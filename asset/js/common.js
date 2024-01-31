@@ -55,11 +55,26 @@ $(function () {
 })
 // 연관사이트
 $(function () {
-    $('button').click(function () {
+    $('.site-group button').click(function () {
         $(this).toggleClass('on').siblings().toggleClass('on');
         // 다른 버튼에 있는 on 클래스를 제거합니다.
-        $('button').not($(this)).removeClass("on");
+        $('.site-group button').not($(this)).removeClass("on");
         // 다른 .site_wrap 요소에 있는 on 클래스를 제거합니다.
         $(".site_wrap").not($(this).next(".site_wrap")).removeClass("on");
+    })
+})
+$(function () {
+    $('.slide-tit a').click(function (e) {
+        e.preventDefault();
+        if ($('.slide-tit li').hasClass('on')) {
+            // $(this).removeClass('on').parents('li',).removeClass('on');
+        } else {
+            $('.slide-tit li').addClass('on');
+
+        } $('.slide-tit li').not($(this)).removeClass('on');
+        // $(this).removeClass('on').parents('li',).removeClass('on');
+        tabName = $(this).data('slide'); //#tab1,tab2...
+        $(tabName).addClass('on').siblings().removeClass('on')
+
     })
 })

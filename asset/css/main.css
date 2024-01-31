@@ -72,6 +72,15 @@ h2 {
     width: 100%;
 }
 
+#slide1,
+#slide2 {
+    display: none;
+}
+
+#slide1.on,
+#slide2.on {
+    display: block;
+}
 
 .slide-img-wrap .slide-img-item {
     position: relative;
@@ -100,6 +109,16 @@ h2 {
     background-color: #fff;
     background-position: 0 0;
     border-radius: 50%;
+}
+
+.icon_citizen {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-radius: 50%;
+    background-position: -50px 0px;
 }
 
 .section01 {
@@ -244,6 +263,10 @@ h2 {
 .section01 .banner-area .seoul-sns {
     background: #eed925;
 
+}
+
+.simin {
+    display: none !important;
 }
 
 .section02 {

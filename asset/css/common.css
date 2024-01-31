@@ -19,7 +19,8 @@ header .logo a,
     background-repeat: no-repeat;
 }
 
-.icon_news {
+.icon_news,
+.icon_citizen {
     background: url(../images/icon_main.png);
     background-repeat: no-repeat;
 }
