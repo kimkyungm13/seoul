@@ -73,6 +73,8 @@ header .header-bottom .lang_site {
     position: absolute;
     right: 0;
     top: 0;
+    display: flex;
+    align-items: center;
 }
 
 header .header-bottom .slogan {
@@ -88,6 +90,24 @@ header .header-bottom .search-group {
     width: 520px;
     height: 42px;
     border: 3px solid #2292e9;
+}
+
+header .header-bottom .lang_site select {
+    height: 21px;
+    outline: 1px solid #afcfea;
+    font-size: 12px;
+    color: #1E6CB3
+}
+
+header .header-bottom .lang_site input[type="button"] {
+    color: #fff;
+    background-color: #1E6CB3;
+    font-size: 11px;
+    display: flex;
+    height: 21px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 header {}

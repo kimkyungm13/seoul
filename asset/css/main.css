@@ -637,10 +637,22 @@ h2 {
 
 .section09 {
     position: relative;
+    margin-bottom: 20px;
 }
 
-.section09 ul {
+.section09 .site-group {
     display: flex;
+    border: 1px solid #d0d0d0;
+}
+
+.section09 .site-group>li+li:before {
+    content: '';
+    border-left: 1px solid #d0d0d0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    z-index: 1;
 }
 
 .section09 .site-group li {
@@ -655,12 +667,14 @@ h2 {
     text-align: center;
     background: #f7f7f7;
     padding: 16px 0;
+    gap: 10px;
 }
 
 .section09 .site_wrap {
     display: none;
     position: absolute;
     bottom: 51px;
+    left: 0;
     border: 1px solid #ccc;
     width: 100%;
     z-index: 3;
@@ -692,19 +706,73 @@ h2 {
 
 .site-group [class*="btn-"]:after {
     content: '';
-    position: absolute;
-    right: 45px;
-    height: 7px;
-    width: 7px;
+    height: 10px;
+    width: 10px;
     border-style: solid;
     border-color: #373737;
     border-width: 0px 2px 2px 0px;
     transform: rotate(-135deg);
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform-origin: center center;
+    margin-top: 6px;
 }
 
 .site-group [class*="btn-"].on:after {
     transform: rotate(45deg);
     transform-origin: center center;
+    margin-top: -4px;
+}
+
+footer {}
+
+footer .footer-top ul {
+    display: flex;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+footer .footer-top ul li {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .footer-top ul li+li:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #dcdcdc;
+}
+
+footer .footer-top ul li a {
+    font-size: 12px;
+    color: #636363;
+}
+
+footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+}
+
+footer .footer-bottom .address-wrap {
+    display: flex;
+    gap: 40px;
+}
+
+footer .footer-bottom .dasan {
+    width: 108px;
+    height: 45px;
+    background: url(../images/img-sp-common.png) no-repeat;
+    background-position: -180px 0;
+}
+
+footer .footer-bottom .address li {
+    padding-bottom: 2px;
+    font-size: 12px;
+    color: #636363;
 }

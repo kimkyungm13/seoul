@@ -53,15 +53,13 @@ $(function () {
         popSwiper.autoplay.start();
     });
 })
-
 // 연관사이트
 $(function () {
-    $('.btn-01').click(function () {
-        $('.btn-01').toggleClass('on');
-        if ($('.btn-01').hasClass('on')) {
-            $('.site_wrap').css('display', 'block');
-        } else {
-            $('.site_wrap').css('display', 'none')
-        };
+    $('button').click(function () {
+        $(this).toggleClass('on').siblings().toggleClass('on');
+        // 다른 버튼에 있는 on 클래스를 제거합니다.
+        $('button').not($(this)).removeClass("on");
+        // 다른 .site_wrap 요소에 있는 on 클래스를 제거합니다.
+        $(".site_wrap").not($(this).next(".site_wrap")).removeClass("on");
     })
 })
