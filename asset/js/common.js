@@ -4,6 +4,7 @@ $(function () {
             delay: 2000,
             disableOnInteraction: false,
         },
+        loop: true,
         pagination: {
             el: ".paging",
             type: "fraction",
@@ -30,6 +31,7 @@ $(function () {
             delay: 2000,
             disableOnInteraction: false,
         },
+        loop: true,
         slidesPerView: 3,
         spaceBetween: 43,
         pagination: {
