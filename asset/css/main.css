@@ -33,11 +33,14 @@ h2 {
     width: 80px;
     height: 175px;
     justify-content: center;
-    background: #d2e1e9;
+
 }
 
-.slide-area .slide-tit li.on {
+.slide-area .slide-tit li a.on {
     background-color: #0158a8;
+}
+
+.slide-area .slide-tit li a.on span {
     color: #fff;
 }
 
@@ -69,6 +72,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    background: #d2e1e9;
 }
 
 #slide1,
