@@ -4,7 +4,6 @@
 }
 
 h2 {
-
     font-size: 24px;
 }
 
@@ -12,22 +11,18 @@ h2 {
     width: 690px;
 }
 
-
-
-
-
-.slide-area {
+.section01 .slide-area {
     display: flex;
 }
 
-.slide-area .slide-tit {
+.section01 .slide-area .slide-tit {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.slide-area .slide-tit li {
+.section01 .slide-area .slide-tit li {
     display: flex;
     position: relative;
     width: 80px;
@@ -36,24 +31,24 @@ h2 {
 
 }
 
-.slide-area .slide-tit li a.on {
+.section01 .slide-area .slide-tit li a.on {
     background-color: #0158a8;
 }
 
-.slide-area .slide-tit li a.on span {
+.section01 .slide-area .slide-tit li a.on span {
     color: #fff;
 }
 
-.slide-area .slide-tit li .slide_name {
+.section01 .slide-area .slide-tit li .slide_name {
     font-weight: 600;
     color: #333;
 }
 
-.slide-area .slide-tit li.on .slide_name {
+.section01 .slide-area .slide-tit li.on .slide_name {
     color: #fff;
 }
 
-.slide-area .slide-tit li.on:after {
+.section01 .slide-area .slide-tit li.on:after {
     content: " ";
     position: absolute;
     z-index: 2;
@@ -65,7 +60,7 @@ h2 {
     transform: translateY(-50%);
 }
 
-.slide-area .slide-tit li a {
+.section01 .slide-area .slide-tit li a {
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -85,11 +80,11 @@ h2 {
     display: block;
 }
 
-.slide-img-wrap .slide-img-item {
+.section01 .slide-img-wrap .slide-img-item {
     position: relative;
 }
 
-.slide-img-wrap .slide-img-item .slide-txt {
+.section01 .slide-img-wrap .slide-img-item .slide-txt {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -143,6 +138,17 @@ h2 {
 
 .section01 .slide-control .control-wrap {
     display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.section01 .slide-control .control-wrap:before {
+    content: '';
+    position: absolute;
+    right: 66px;
+    width: 1px;
+    height: 24px;
+    background: rgba(255, 255, 255, .5);
 }
 
 .section01 .slide-control .control-wrap [class*="button-"] {
@@ -179,6 +185,8 @@ h2 {
 .section01 .slide-control .paging span {
     color: #fff;
 }
+
+
 
 .section01 .mayor-wrap {
     display: flex;
@@ -301,7 +309,10 @@ h2 {
     background: url(../images/icon_link6.png) no-repeat right 13px top 50%;
 }
 
-.section02 ul li {}
+.section02 ul li a [class*="ico"] {
+    background: url(../images/icon_service.png);
+    background-repeat: no-repeat;
+}
 
 .section02 ul li a {
     display: flex;
@@ -580,7 +591,7 @@ h2 {
     position: absolute;
     right: 0;
     top: 0;
-    background: url(../images/img-sp-common.png) no-repeat 0 0;
+    background-position: 0 0;
 }
 
 .section06 .new-wrap {
@@ -739,7 +750,6 @@ h2 {
     width: 19px;
     height: 19px;
     position: absolute;
-    background: url(../images/img-sp-common.png) no-repeat;
     background-position: -59px -258px;
 }
 
